@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" style="background-color: #4CAF50;">
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <h2>N O T E S</h2>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+            <li>
+                <a routerLink="/add-student">ADD NOTE</a>
+            </li>
+            <li>
+                <a routerLink="/list-student">YOUR NOTES</a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>
